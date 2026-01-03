@@ -1,0 +1,21 @@
+# Ignore dataset (folder + archive)
+ibug_300W_large_face_landmark_dataset/
+ibug_300W_large_face_landmark_dataset.tar.gz
+
+# Ignore model weights
+#*.pth
+
+# Data files
+*.csv
+*.zip
+*.tar
+*.gz
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Jupyter Notebook
+final_project.py

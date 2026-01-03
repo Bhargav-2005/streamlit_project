@@ -28,7 +28,9 @@ def load_model():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = Network().to(device)
 
-    MODEL_PATH = "../face_landmarks.pth"  # Update this path as needed
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    MODEL_PATH = os.path.join(BASE_DIR, "..", "face_landmarks.pth")
+
 
     model.load_state_dict(torch.load(MODEL_PATH, map_location=device))
     model.eval()

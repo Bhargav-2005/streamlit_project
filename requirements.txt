@@ -1,4 +1,4 @@
-opencv-python
+
 numpy
 matplotlib
 pillow
@@ -8,5 +8,6 @@ torch
 torchvision
 streamlit
 streamlit
-opencv-python
+
+opencv-python-headless
 

@@ -127,24 +127,36 @@ elif input_type == "Video Upload":
         os.remove(temp_path)
 
 # ================= LIVE CAMERA =================
+# elif input_type == "Live Camera":
+#     st.warning("Allow camera access when browser asks")
+
+#     cam = cv2.VideoCapture(0)
+#     stframe = st.empty()
+
+#     stop = st.button("Stop Camera")
+
+#     while cam.isOpened() and not stop:
+#         ret, frame = cam.read()
+#         if not ret:
+#             break
+
+#         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+#         output, _ = process_image(frame)
+#         stframe.image(output)
+
+#     cam.release()
+
 elif input_type == "Live Camera":
-    st.warning("Allow camera access when browser asks")
+    st.info("📷 Using browser camera")
 
-    cam = cv2.VideoCapture(0)
-    stframe = st.empty()
+    camera_image = st.camera_input("Take a photo")
 
-    stop = st.button("Stop Camera")
+    if camera_image:
+        image = Image.open(camera_image).convert("RGB")
+        image_np = np.array(image)
 
-    while cam.isOpened() and not stop:
-        ret, frame = cam.read()
-        if not ret:
-            break
-
-        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        output, _ = process_image(frame)
-        stframe.image(output)
-
-    cam.release()
+        output, face_count = process_image(image_np)
+        st.image(output, caption=f"Detected {face_count} face(s)")
 
 # ================= DATA STORAGE LOGIC =================
 if consent:

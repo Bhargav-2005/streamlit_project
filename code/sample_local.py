@@ -28,7 +28,8 @@ def load_model():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = Network().to(device)
 
-    MODEL_PATH = os.path.join(os.path.dirname(__file__), r"C:\Users\chall\OneDrive\Desktop\final project\face_landmarks.pth")
+    MODEL_PATH = "../face_landmarks.pth"  # Update this path as needed
+
     model.load_state_dict(torch.load(MODEL_PATH, map_location=device))
     model.eval()
 

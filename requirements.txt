@@ -8,3 +8,5 @@ torch
 torchvision
 streamlit
 streamlit
+opencv-python
+

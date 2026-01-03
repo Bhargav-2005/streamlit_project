@@ -30,7 +30,7 @@ Origin: Often referred to as part of the 300 Faces In-the-Wild (300-W) dataset, 
 # %%bash
 # 
 # # Configure your Git user name and email
-# git config user.email "challabhargav06@gmail.com"
+# g"
 # "
 # 
 # # Remove existing remote 'origin' if it exists, to avoid 'remote origin already exists' error
@@ -1308,7 +1308,7 @@ The user wants to configure Git with a specified username and email, and then se
 # %%bash
 # 
 # # Configure your Git user name and email
-# git config user.email "challabhargav06@gmail.com"
+# g"
 # "
 # 
 # # Remove existing remote 'origin' if it exists, to avoid 'remote origin already exists' error
@@ -1330,7 +1330,7 @@ The previous Git commands failed because the current directory was not a Git rep
 # git init
 # 
 # # Configure your Git user name and email
-# git config user.email "challabhargav06@gmail.com"
+# g"
 # "
 # 
 # # Remove existing remote 'origin' if it exists, to avoid 'remote origin already exists' error
@@ -1586,7 +1586,7 @@ The previous attempts to add files to Git failed, with `git add .` encountering 
 # # --- Step 3: Perform Git operations ---
 # 
 # # Configure your Git user name and email (if not already set globally or locally)
-# git config user.email "challabhargav06@gmail.com"
+# g"
 # "
 # 
 # # Ensure the remote 'origin' is correctly set up
@@ -1776,7 +1776,7 @@ The previous Git commands failed because `face_landmarks.pth` was reported missi
 # # --- Step 3: Perform Git operations ---
 # 
 # # Configure your Git user name and email (if not already set globally or locally)
-# git config user.email "challabhargav06@gmail.com"
+# g"
 # "
 # 
 # # Ensure the remote 'origin' is correctly set up
@@ -2084,7 +2084,7 @@ The subtask requires initializing a Git repository, configuring user details, an
 # git init
 # 
 # # Configure your Git user name and email
-# git config user.email "challabhargav06@gmail.com"
+# g"
 # "
 # 
 # # Remove existing remote 'origin' if it exists, to avoid 'remote origin already exists' error
